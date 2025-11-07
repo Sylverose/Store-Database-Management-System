@@ -1,0 +1,554 @@
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (9, 2)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_not_null for column brand_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_max_length for column brand_name
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 9 rows, 2 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_not_null to column brand_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_max_length to column brand_name
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (7, 2)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_not_null for column category_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_max_length for column category_name
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 7 rows, 2 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_not_null to column category_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_max_length to column category_name
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (3, 7)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 15 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_not_null for column city
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_max_length for column city
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_not_null for column state
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_max_length for column state
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_not_null for column zip_code
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_data_type for column zip_code
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_range for column zip_code
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 3 rows, 7 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: city_not_null to column city
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: city_max_length to column city
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: state_not_null to column state
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: state_max_length to column state
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_not_null to column zip_code
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_data_type to column zip_code
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_range to column zip_code
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 15/15 rules passed, overall pass rate: 100.0%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (10, 8)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 19 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_not_null for column last_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_max_length for column last_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_not_null for column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_data_type for column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_range for column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_categorical for column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_data_type for column manager_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_range for column manager_id
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 10 rows, 8 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_not_null to column last_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_max_length to column last_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: active_not_null to column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: active_data_type to column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: active_range to column active
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: street_categorical to column street
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_data_type to column manager_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_range to column manager_id
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 17/19 rules passed, overall pass rate: 89.5%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: data_cleaning
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting data cleaning for DataFrame: (10, 8)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Applied 1 fixes for rule: manager_id_range
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Data cleaning complete: 1 total fixes applied
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: data_cleaning
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (321, 6)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 17 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_not_null for column product_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_max_length for column product_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_not_null for column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_data_type for column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_range for column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_not_null for column list_price
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_data_type for column list_price
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_range for column list_price
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 321 rows, 6 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_not_null to column product_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_max_length to column product_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_not_null to column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_data_type to column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_range to column model_year
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_not_null to column list_price
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_data_type to column list_price
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_range to column list_price
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 17/17 rules passed, overall pass rate: 100.0%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (939, 3)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Generated 9 validation rules
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_not_null for column quantity
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_data_type for column quantity
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_range for column quantity
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 939 rows, 3 columns
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_not_null to column quantity
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_data_type to column quantity
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_range to column quantity
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Validation complete: 9/9 rules passed, overall pass rate: 100.0%
+2025-10-30 16:37:21 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (9, 2)
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_not_null for column brand_name
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_max_length for column brand_name
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 9 rows, 2 columns
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_not_null to column brand_name
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_max_length to column brand_name
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 17:24:46 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (9, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_not_null for column brand_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_max_length for column brand_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 9 rows, 2 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_not_null to column brand_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_max_length to column brand_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (9, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_not_null for column brand_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_name_max_length for column brand_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 9 rows, 2 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_not_null to column brand_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_name_max_length to column brand_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (7, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_not_null for column category_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_max_length for column category_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 7 rows, 2 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_not_null to column category_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_max_length to column category_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (7, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 5 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_not_null for column category_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_name_max_length for column category_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 7 rows, 2 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_not_null to column category_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_name_max_length to column category_name
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 5/5 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (3, 7)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 15 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_not_null for column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_max_length for column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_not_null for column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_max_length for column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_not_null for column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_data_type for column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_range for column zip_code
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 3 rows, 7 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: city_not_null to column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: city_max_length to column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: state_not_null to column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: state_max_length to column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_not_null to column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_data_type to column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_range to column zip_code
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 15/15 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (3, 7)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 15 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_not_null for column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: city_max_length for column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_not_null for column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: state_max_length for column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_not_null for column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_data_type for column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: zip_code_range for column zip_code
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 3 rows, 7 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: city_not_null to column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: city_max_length to column city
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: state_not_null to column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: state_max_length to column state
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_not_null to column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_data_type to column zip_code
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: zip_code_range to column zip_code
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 15/15 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (10, 8)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 19 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_not_null for column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_max_length for column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_not_null for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_data_type for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_range for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_categorical for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_data_type for column manager_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_range for column manager_id
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 10 rows, 8 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_not_null to column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_max_length to column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_not_null to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_data_type to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_range to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_categorical to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_data_type to column manager_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_range to column manager_id
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 17/19 rules passed, overall pass rate: 89.5%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: data_cleaning
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting data cleaning for DataFrame: (10, 8)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Applied 1 fixes for rule: manager_id_range
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Data cleaning complete: 1 total fixes applied
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: data_cleaning
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (10, 8)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 19 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_not_null for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: name_max_length for column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_not_null for column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: last_name_max_length for column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_not_null for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: email_max_length for column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_not_null for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: phone_max_length for column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_not_null for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_data_type for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: active_range for column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_not_null for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_max_length for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: street_categorical for column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_data_type for column manager_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: manager_id_range for column manager_id
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 10 rows, 8 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_not_null to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: name_max_length to column name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_not_null to column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: last_name_max_length to column last_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_not_null to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: email_max_length to column email
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_not_null to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: phone_max_length to column phone
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_not_null to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_data_type to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: active_range to column active
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_not_null to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_max_length to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: street_categorical to column street
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_data_type to column manager_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: manager_id_range to column manager_id
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 17/19 rules passed, overall pass rate: 89.5%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (321, 6)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 17 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_not_null for column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_max_length for column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_not_null for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_data_type for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_range for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_not_null for column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_data_type for column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_range for column list_price
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 321 rows, 6 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_not_null to column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_max_length to column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_not_null to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_data_type to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_range to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_not_null to column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_data_type to column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_range to column list_price
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 17/17 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (321, 6)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 17 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_not_null for column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_name_max_length for column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_not_null for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_data_type for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: brand_id_range for column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_not_null for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_data_type for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: category_id_range for column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_not_null for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_data_type for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: model_year_range for column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_not_null for column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_data_type for column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: list_price_range for column list_price
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 321 rows, 6 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_not_null to column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_name_max_length to column product_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_not_null to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_data_type to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: brand_id_range to column brand_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_not_null to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_data_type to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: category_id_range to column category_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_not_null to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_data_type to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: model_year_range to column model_year
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_not_null to column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_data_type to column list_price
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: list_price_range to column list_price
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 17/17 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (939, 3)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 9 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_not_null for column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_data_type for column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_range for column quantity
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 939 rows, 3 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_not_null to column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_data_type to column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_range to column quantity
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 9/9 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generating schema validation rules from DataFrame: (939, 3)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Generated 9 validation rules
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_not_null for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_max_length for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: store_name_categorical for column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_not_null for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_data_type for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: product_id_range for column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_not_null for column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_data_type for column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Added validation rule: quantity_range for column quantity
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting operation: dataframe_validation
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Starting validation of DataFrame: 939 rows, 3 columns
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_not_null to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_max_length to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: store_name_categorical to column store_name
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_not_null to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_data_type to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: product_id_range to column product_id
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_not_null to column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_data_type to column quantity
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.validation       | Applying rule: quantity_range to column quantity
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Validation complete: 9/9 rules passed, overall pass rate: 100.0%
+2025-10-30 17:48:45 | INFO     | no-corre | etl.validation       | Completed operation: dataframe_validation

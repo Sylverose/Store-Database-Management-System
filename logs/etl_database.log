@@ -1,0 +1,628 @@
+2025-10-30 16:25:26 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:25:54 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:26:30 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:26:30 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\brands.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\brands.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\categories.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\categories.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\stores.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\stores.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\staffs.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\staffs.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\products.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\products.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\stocks.csv
+2025-10-30 16:26:30 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\tests\..\src\data\CSV\stocks.csv (Operation: read_csv_file) (Component: database_manager)
+2025-10-30 16:26:30 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 16:27:04 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:27:04 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:27:48 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:27:48 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:27:48 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 16:27:48 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:31:02 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:31:02 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:31:02 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 16:34:33 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: PandasOptimizer.__init__() got an unexpected keyword argument 'optimize_dtypes'. Did you mean 'auto_optimize_dtypes'?
+2025-10-30 16:34:33 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read brands.csv: (9, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read categories.csv: (7, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read stores.csv: (3, 7) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read staffs.csv: (10, 8) shape, 0.00MB memory, 2 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read products.csv: (321, 6) shape, 0.03MB memory, 0 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Read stocks.csv: (939, 3) shape, 0.00MB memory, 1 categorical columns
+2025-10-30 16:35:37 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: 'DatabaseManager' object has no attribute 'validate_dataframe'
+2025-10-30 16:35:37 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read brands.csv: (9, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read categories.csv: (7, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read stores.csv: (3, 7) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read staffs.csv: (10, 8) shape, 0.00MB memory, 2 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read products.csv: (321, 6) shape, 0.03MB memory, 0 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Read stocks.csv: (939, 3) shape, 0.00MB memory, 1 categorical columns
+2025-10-30 16:36:29 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: 'BatchProcessor' object has no attribute 'data_validator'
+2025-10-30 16:36:29 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read brands.csv: (9, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'brands': (9, 2)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read categories.csv: (7, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'categories': (7, 2)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read stores.csv: (3, 7) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stores': (3, 7)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validation passed: all 15 rules successful
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read staffs.csv: (10, 8) shape, 0.00MB memory, 2 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'staffs': (10, 8)
+2025-10-30 16:37:21 | WARNING  | no-corre | etl.database         | Validation found issues: 2 failed rules
+2025-10-30 16:37:21 | WARNING  | no-corre | etl.database         | Error-level validation failures: 1
+2025-10-30 16:37:21 | WARNING  | no-corre | etl.database         |   - manager_id_data_type: Invalid data type in manager_id, expected float
+2025-10-30 16:37:21 | WARNING  | no-corre | etl.database         | Data validation found 2 issues in staffs.csv
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Applied automatic fixes to staffs.csv: {'manager_id_range': np.int64(1)}
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read products.csv: (321, 6) shape, 0.03MB memory, 0 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'products': (321, 6)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validation passed: all 17 rules successful
+2025-10-30 16:37:21 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Read stocks.csv: (939, 3) shape, 0.00MB memory, 1 categorical columns
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stocks': (939, 3)
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Validation passed: all 9 rules successful
+2025-10-30 16:37:21 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 16:37:30 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 16:37:30 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 16:37:30 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 16:37:30 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 17:24:16 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 17:24:16 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 17:24:16 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 17:24:46 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 17:24:46 | INFO     | no-corre | etl.database         | Read brands.csv: (9, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 17:24:46 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'brands': (9, 2)
+2025-10-30 17:24:46 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 17:24:46 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading brands.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read brands.csv: (9, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'brands': (9, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'brands': (9, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading categories.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read categories.csv: (7, 2) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'categories': (7, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'categories': (7, 2)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 5 rules successful
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading stores.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read stores.csv: (3, 7) shape, 0.00MB memory, 0 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stores': (3, 7)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 15 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stores': (3, 7)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 15 rules successful
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read staffs.csv: (10, 8) shape, 0.00MB memory, 2 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'staffs': (10, 8)
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         | Validation found issues: 2 failed rules
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         | Error-level validation failures: 1
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         |   - manager_id_data_type: Invalid data type in manager_id, expected float
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         | Data validation found 2 issues in staffs.csv
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Applied automatic fixes to staffs.csv: {'manager_id_range': np.int64(1)}
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'staffs': (10, 8)
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         | Validation found issues: 2 failed rules
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         | Error-level validation failures: 1
+2025-10-30 17:48:45 | WARNING  | no-corre | etl.database         |   - manager_id_data_type: Invalid data type in manager_id, expected float
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading products.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read products.csv: (321, 6) shape, 0.03MB memory, 0 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'products': (321, 6)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 17 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'products': (321, 6)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 17 rules successful
+2025-10-30 17:48:45 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with pandas optimization
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Read stocks.csv: (939, 3) shape, 0.00MB memory, 1 categorical columns
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stocks': (939, 3)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 9 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validating DataFrame for table 'stocks': (939, 3)
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Validation passed: all 9 rules successful
+2025-10-30 17:48:45 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 17:49:05 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 17:49:05 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 17:49:05 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 17:49:05 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 17:50:54 | DEBUG    | no-corre | etl.database         | Setting up standard validation rules for ETL data
+2025-10-30 17:50:54 | DEBUG    | no-corre | etl.database         | Validation rules will be created dynamically per table
+2025-10-30 17:50:54 | INFO     | no-corre | etl.database         | Database connections closed
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\brands.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\categories.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\stores.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\staffs.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\products.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:07 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\stocks.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:55:11 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Starting CSV import
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\brands.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\categories.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\stores.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\staffs.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\products.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | ERROR    | no-corre | etl.database         | Failed to read C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\CSV\stocks.csv: 'PandasOptimizer' object has no attribute 'optimize_csv_reading'
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Total records imported: 0
+2025-10-30 19:56:23 | INFO     | no-corre | etl.database         | Completed CSV import
+2025-10-30 19:57:12 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-30 19:57:12 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-30 19:57:12 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-30 19:57:12 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-30 19:57:12 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Starting CSV import
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Imported 0 records to brands
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Imported 0 records to categories
+2025-10-30 19:57:13 | INFO     | no-corre | etl.database         | Imported 3 records to stores
+2025-10-30 19:57:13 | ERROR    | no-corre | etl.database         | Failed CSV import: nan can not be used with MySQL
+2025-10-30 19:57:47 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Starting CSV import
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 0 records to brands
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 0 records to categories
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 3 records to stores
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 10 records to staffs
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 0 records to products
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Imported 0 records to stocks
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Total records imported: 13
+2025-10-30 20:00:57 | INFO     | no-corre | etl.database         | Completed CSV import
+2025-10-30 20:01:22 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-30 20:06:25 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:16:35 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:50:26 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:52:05 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:52:32 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:52:48 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:59:20 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 07:59:41 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 07:59:58 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 11:43:32 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 11:43:45 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 11:44:05 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Starting table creation
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: brands
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: categories
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: stores
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: staffs
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: products
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: stocks
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: orders
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: order_items
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Created table: customers
+2025-10-31 14:18:08 | INFO     | no-corre | etl.database         | Completed table creation
+2025-10-31 14:18:26 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-03 10:15:51 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-03 10:15:53 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-03 12:05:40 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 12:05:40 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-03 12:07:04 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 12:07:05 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-03 13:32:07 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 13:32:07 | WARNING  | no-corre | etl.database         | No CSV files found to import
+2025-11-03 13:32:36 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 13:32:36 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-03 13:42:34 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 13:42:34 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-03 13:43:27 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-03 13:43:27 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-04 10:36:36 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-04 10:36:36 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-04 10:37:10 | INFO     | no-corre | etl.database         | Created 9 tables
+2025-11-04 10:37:10 | INFO     | no-corre | etl.database         | All tables created and CSV data imported successfully
+2025-11-05 15:53:41 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 15:55:18 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\brands.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file brands.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\brands.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\categories.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file categories.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\categories.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\stores.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file stores.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\stores.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\staffs.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file staffs.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\staffs.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\products.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file products.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\products.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\stocks.csv
+2025-11-05 15:55:23 | ERROR    | no-corre | etl.database         | Error reading CSV file stocks.csv: [CSV_FILE_NOT_FOUND] CSV file not found: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\src\data\CSV\stocks.csv (Operation: read_csv_file) (Component: database_manager)
+2025-11-05 15:57:20 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 15:57:23 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:03:25 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:09:25 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:10:26 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 16:10:30 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:11:32 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:14:18 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 16:14:21 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:16:19 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:18:03 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 16:18:06 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:18:30 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:22:22 | INFO     | no-corre | etl.database         | Database connections closed
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 16:26:52 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:26:55 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: brands
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: categories
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: stores
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: staffs
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: customers
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: products
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: stocks
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: orders
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | Created/verified table: order_items
+2025-11-05 16:26:59 | INFO     | no-corre | etl.database         | All 9 tables created successfully
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-05 16:28:11 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-05 16:28:12 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-06 09:02:48 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-06 09:02:49 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-06 09:25:08 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-06 09:25:09 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:18:44 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into customers
+2025-11-06 15:18:44 | DEBUG    | no-corre | etl.database         | Batch 2: Inserted 445 records into customers
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed batch insert: 1445/1445 records inserted into customers, 0 errors
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:18:44 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into orders
+2025-11-06 15:18:44 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed batch insert: 1000/1615 records inserted into orders, 615 errors
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:18:44 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:18:44 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:31:56 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into customers
+2025-11-06 15:31:56 | DEBUG    | no-corre | etl.database         | Batch 2: Inserted 445 records into customers
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed batch insert: 1445/1445 records inserted into customers, 0 errors
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:31:56 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into orders
+2025-11-06 15:31:56 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed batch insert: 1000/1615 records inserted into orders, 615 errors
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:31:56 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:31:56 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:33:43 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into customers
+2025-11-06 15:33:43 | DEBUG    | no-corre | etl.database         | Batch 2: Inserted 445 records into customers
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed batch insert: 1445/1445 records inserted into customers, 0 errors
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:33:43 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:33:43 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1615 records inserted into orders, 1615 errors
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:33:43 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:33:43 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:35:45 | DEBUG    | no-corre | etl.database         | Batch 1: Inserted 1000 records into customers
+2025-11-06 15:35:45 | DEBUG    | no-corre | etl.database         | Batch 2: Inserted 445 records into customers
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed batch insert: 1445/1445 records inserted into customers, 0 errors
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:35:45 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:35:45 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1615 records inserted into orders, 1615 errors
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:35:45 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:35:45 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Error inserting batch 1 into customers: 1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 1000, 'additional_data': {}, 'timestamp': '2025-11-06T15:37:29.742355'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 171, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Error inserting batch 2 into customers: 1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 445, 'additional_data': {}, 'timestamp': '2025-11-06T15:37:29.802326'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 171, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1001\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1445 records inserted into customers, 1445 errors
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1615 records inserted into orders, 1615 errors
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:37:29 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:37:29 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Error inserting batch 1 into customers: 1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 1000, 'additional_data': {}, 'timestamp': '2025-11-06T15:38:47.613187'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 171, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Error inserting batch 2 into customers: 1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 445, 'additional_data': {}, 'timestamp': '2025-11-06T15:38:47.629195'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 171, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1001\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1445 records inserted into customers, 1445 errors
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1615 records inserted into orders, 1615 errors
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:38:47 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:38:47 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_customers
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting batch insert of 1445 records into customers
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Error inserting batch 1 into customers: 1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 1000, 'additional_data': {}, 'timestamp': '2025-11-06T15:40:55.062367'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 172, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Error inserting batch 2 into customers: 1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Structured error info: {'error_type': 'DatabaseError', 'message': 'Batch insert failed for table customers', 'error_code': 'DB_ERROR', 'severity': 'high', 'category': 'database', 'context': {'operation': 'batch_insert', 'component': 'batch_processor', 'table_name': 'customers', 'file_path': None, 'record_count': 445, 'additional_data': {}, 'timestamp': '2025-11-06T15:40:55.078310'}, 'recovery_suggestions': ['Check database connectivity and credentials', 'Verify SQL syntax and table/column names', 'Check database permissions', 'Ensure database server is running and accessible', 'Review connection pool settings'], 'original_exception': "1062 (23000): Duplicate entry '1001' for key 'customers.PRIMARY'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\SPAC-O-3\\Kode_opgaver\\Python\\ETL\\src\\database\\db_manager.py", line 172, in insert_batch\n    cursor.executemany(sql, batch_values)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 522, in executemany\n    return self.execute(stmt)\n           ~~~~~~~~~~~~^^^^^^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\cursor.py", line 416, in execute\n    self._connection.cmd_query(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        self._stmt_partition["mappable_stmt"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        read_timeout=self._read_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        write_timeout=self._write_timeout,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py", line 97, in wrapper\n    return method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 984, in cmd_query\n    result = self._handle_result(\n        self._send_cmd(\n    ...<6 lines>...\n        write_timeout,\n    )\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 89, in handle_cnx_method\n    raise err\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\_decorating.py", line 85, in handle_cnx_method\n    return cnx_method(cnx, *args, **kwargs)\n  File "C:\\Users\\SPAC-O-3\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\mysql\\connector\\connection.py", line 745, in _handle_result\n    raise get_exception(packet)\nmysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry \'1001\' for key \'customers.PRIMARY\'\n'}
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1445 records inserted into customers, 1445 errors
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_customers
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_orders
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting batch insert of 1615 records into orders
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed batch insert: 0/1615 records inserted into orders, 1615 errors
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_orders
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting operation: batch_insert_order_items
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Starting batch insert of 5 records into order_items
+2025-11-06 15:40:55 | ERROR    | no-corre | etl.database         | Failed to get database connection
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed batch insert: 0/5 records inserted into order_items, 5 errors
+2025-11-06 15:40:55 | INFO     | no-corre | etl.database         | Completed operation: batch_insert_order_items

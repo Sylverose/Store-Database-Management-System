@@ -1,0 +1,61 @@
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | Data saved successfully to orders_data.csv
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | orders data processing completed successfully!
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | Data saved successfully to order_items_data.csv
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | order_items data processing completed successfully!
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | Data saved successfully to customers_data.csv
+2025-10-30 16:14:51 | INFO     | no-corre | etl.api              | customers data processing completed successfully!
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Fetching all API data concurrently...
+2025-10-30 16:17:25 | DEBUG    | no-corre | etl.api              | Created new aiohttp session with connection pooling
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Starting operation: batch_api_requests
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Starting batch execution of 3 API requests
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Batch execution complete: 6 responses
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Completed operation: batch_api_requests
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process orders: Status 200
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process order_items: Status 200
+2025-10-30 16:17:25 | ERROR    | no-corre | etl.api              | Failed to process customers: Status 200
+2025-10-30 16:17:25 | INFO     | no-corre | etl.api              | Async fetch complete - Success rate: 100.0%, Avg response time: 0.26s
+2025-10-30 16:17:25 | DEBUG    | no-corre | etl.api              | Closed aiohttp session
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Fetching all API data concurrently...
+2025-10-30 16:30:18 | DEBUG    | no-corre | etl.api              | Created new aiohttp session with connection pooling
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Starting operation: batch_api_requests
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Starting batch execution of 3 API requests
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Batch execution complete: 6 responses
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Completed operation: batch_api_requests
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process orders: Status 200
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process order_items: Status 200
+2025-10-30 16:30:18 | ERROR    | no-corre | etl.api              | Failed to process customers: Status 200
+2025-10-30 16:30:18 | INFO     | no-corre | etl.api              | Async fetch complete - Success rate: 100.0%, Avg response time: 0.27s
+2025-10-30 16:30:18 | DEBUG    | no-corre | etl.api              | Closed aiohttp session
+2025-10-30 16:35:20 | INFO     | no-corre | etl.api              | Fetching all API data concurrently...
+2025-10-30 16:35:20 | DEBUG    | no-corre | etl.api              | Created new aiohttp session with connection pooling
+2025-10-30 16:35:20 | INFO     | no-corre | etl.api              | Starting operation: batch_api_requests
+2025-10-30 16:35:20 | INFO     | no-corre | etl.api              | Starting batch execution of 3 API requests
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Request failed in batch: unsupported operand type(s) for /: 'float' and 'str'
+2025-10-30 16:35:22 | INFO     | no-corre | etl.api              | Batch execution complete: 6 responses
+2025-10-30 16:35:22 | INFO     | no-corre | etl.api              | Completed operation: batch_api_requests
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process orders: Status 200
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process unknown: Status 0
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process order_items: Status 200
+2025-10-30 16:35:22 | ERROR    | no-corre | etl.api              | Failed to process customers: Status 200
+2025-10-30 16:35:22 | INFO     | no-corre | etl.api              | Async fetch complete - Success rate: 100.0%, Avg response time: 2.12s
+2025-10-30 16:35:22 | DEBUG    | no-corre | etl.api              | Closed aiohttp session
+2025-10-30 17:49:05 | ERROR    | no-corre | etl.api              | Failed to save orders CSV: 'charmap' codec can't encode character '\u2192' in position 34: character maps to <undefined>
+2025-10-30 17:49:05 | ERROR    | no-corre | etl.api              | Failed to save order_items CSV: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+2025-10-30 17:49:05 | ERROR    | no-corre | etl.api              | Failed to save customers CSV: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+2025-10-30 17:49:05 | WARNING  | no-corre | etl.api              | Only 0/3 CSV files saved successfully
