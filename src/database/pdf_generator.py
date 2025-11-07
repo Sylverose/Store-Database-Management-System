@@ -117,7 +117,8 @@ class CustomerOrderPDFGenerator:
         if orders_data:
             # Calculate totals
             total_orders = len(orders_data)
-            total_amount = sum(order.get('total_amount', 0) for order in orders_data)
+            # Handle None values in total_amount
+            total_amount = sum(order.get('total_amount') or 0 for order in orders_data)
             
             # Summary
             summary_data = [
@@ -147,8 +148,8 @@ class CustomerOrderPDFGenerator:
                     str(order.get('order_id', 'N/A')),
                     str(order.get('order_date', 'N/A')),
                     str(order.get('order_status', 'N/A')),
-                    str(order.get('item_count', 0)),
-                    f"{order.get('total_amount', 0):,.2f} kr"
+                    str(order.get('item_count') or 0),
+                    f"{order.get('total_amount') or 0:,.2f} kr"
                 ])
             
             orders_table = Table(order_table_data, colWidths=[1*inch, 1.5*inch, 1.2*inch, 0.8*inch, 1.5*inch])
