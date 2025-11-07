@@ -38,6 +38,7 @@ from themes import ThemeManager
 from auth.session import SessionManager  # type: ignore
 from auth.permissions import PermissionManager  # type: ignore
 from user_management import UserManagementDialog  # type: ignore
+from two_factor_setup_dialog import TwoFactorSetupDialog  # type: ignore
 
 
 class DashboardMainWindow(QMainWindow):
@@ -257,6 +258,11 @@ class DashboardMainWindow(QMainWindow):
         theme_action.triggered.connect(self.toggle_theme)
         menu.addAction(theme_action)
         
+        # Security Settings action (2FA)
+        security_action = QAction("Security Settings (2FA)", self)
+        security_action.triggered.connect(self.show_security_settings)
+        menu.addAction(security_action)
+        
         # Get the settings action widget position
         for action in self.toolbar.actions():
             if action.text() == "⚙":
@@ -405,6 +411,42 @@ class DashboardMainWindow(QMainWindow):
         self.repaint()
         theme_name = self.theme_manager.get_current_theme_name()
         self.statusBar().showMessage(f"Switched to {theme_name} theme")
+    
+    def show_security_settings(self):
+        """Show 2FA security settings dialog"""
+        session = SessionManager()
+        user_id = session.get_user_id()
+        username = session.get_username()
+        
+        if not user_id:
+            QMessageBox.warning(self, "Error", "Unable to determine current user")
+            return
+        
+        # Get database connection from connect module
+        from connect import connect_to_mysql
+        from config import DatabaseConfig
+        
+        try:
+            db_config = DatabaseConfig().to_dict()
+            db_conn = connect_to_mysql(db_config)
+            
+            if not db_conn:
+                QMessageBox.warning(self, "Error", "Could not connect to database")
+                return
+            
+            # Open 2FA setup dialog
+            dialog = TwoFactorSetupDialog(user_id, username, db_conn, self)
+            dialog.setup_completed.connect(self._on_2fa_setup_completed)
+            dialog.exec()
+        except Exception as e:
+            QMessageBox.warning(self, "Error", f"Failed to open security settings: {str(e)}")
+    
+    def _on_2fa_setup_completed(self, enabled: bool):
+        """Handle 2FA setup completion"""
+        if enabled:
+            self.statusBar().showMessage("Two-Factor Authentication enabled successfully")
+        else:
+            self.statusBar().showMessage("Two-Factor Authentication disabled")
     
     def open_admin_window(self):
         """Request to open admin window as tab."""
