@@ -8279,3 +8279,66 @@
 2025-11-06 20:55:26 | INFO     | no-corre | tabbed_window        | Detached tab 'Database Management' to standalone window
 2025-11-06 20:55:42 | INFO     | no-corre | tabbed_window        | Added tab: Database Management
 2025-11-06 20:55:42 | INFO     | no-corre | tabbed_window        | Reattached window 'Database Management' as tab
+2025-11-07 07:23:10 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:25:06 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:27:07 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:28:07 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:31:57 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:43:17 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:43:29 | INFO     | no-corre | login_window.window  | Login requested for username: admin
+2025-11-07 07:43:29 | INFO     | no-corre | login_window.worker  | Authenticating user 'admin'
+2025-11-07 07:43:29 | INFO     | no-corre | auth.user_authenticator | User 'admin' authenticated successfully
+2025-11-07 07:43:29 | INFO     | no-corre | login_window.window  | Login successful for user: admin
+2025-11-07 07:43:29 | INFO     | no-corre | auth.session         | Session started for user 'admin' with role 'Administrator'
+2025-11-07 07:43:29 | INFO     | no-corre | __main__             | Login successful: admin (Administrator)
+2025-11-07 07:43:29 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 07:43:29 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 07:43:29 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - admin (Administrator)
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 07:43:29 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 07:43:29 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 07:43:29 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 07:43:29 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 07:43:30 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 07:43:30 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 07:43:30 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 07:43:33 | INFO     | no-corre | tabbed_window        | Added tab: User Management
+2025-11-07 07:43:33 | INFO     | no-corre | __main__             | Opened User Management tab
+2025-11-07 07:48:35 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:49:51 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:50:44 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:51:46 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:52:40 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 07:52:53 | INFO     | no-corre | __main__             | Database connection established

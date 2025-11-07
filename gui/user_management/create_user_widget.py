@@ -63,10 +63,13 @@ class CreateUserWidget(QWidget):
         form_group.setObjectName("form_group")
         form_layout = QFormLayout()
         
+        # Set consistent width for all inputs
+        input_width = 300
+        
         self.username_input = QLineEdit()
         self.username_input.setObjectName("username_input")
         self.username_input.setPlaceholderText("Enter username")
-        self.username_input.setMaximumWidth(300)
+        self.username_input.setMaximumWidth(input_width)
         
         # Password field with eye button in horizontal layout
         password_layout = QHBoxLayout()
@@ -74,7 +77,7 @@ class CreateUserWidget(QWidget):
         self.password_input.setObjectName("password_input")
         self.password_input.setEchoMode(QLineEdit.EchoMode.Password)
         self.password_input.setPlaceholderText("Enter strong password")
-        self.password_input.setMaximumWidth(270)
+        self.password_input.setMaximumWidth(input_width - 30)
         
         self.password_toggle_btn = QPushButton("👁")
         self.password_toggle_btn.setObjectName("password_toggle_btn")
@@ -93,7 +96,7 @@ class CreateUserWidget(QWidget):
         self.confirm_password_input.setObjectName("confirm_password_input")
         self.confirm_password_input.setEchoMode(QLineEdit.EchoMode.Password)
         self.confirm_password_input.setPlaceholderText("Confirm password")
-        self.confirm_password_input.setMaximumWidth(270)
+        self.confirm_password_input.setMaximumWidth(input_width - 30)
         
         self.confirm_toggle_btn = QPushButton("👁")
         self.confirm_toggle_btn.setObjectName("confirm_toggle_btn")
@@ -113,11 +116,12 @@ class CreateUserWidget(QWidget):
         self.role_combo = QComboBox()
         self.role_combo.setObjectName("role_combo")
         self.role_combo.addItems(["Employee", "Manager", "Administrator"])
+        self.role_combo.setMaximumWidth(input_width)
         
         self.staff_id_input = QLineEdit()
         self.staff_id_input.setObjectName("staff_id_input")
         self.staff_id_input.setPlaceholderText("Optional: link to staff member")
-        self.staff_id_input.setMaximumWidth(300)
+        self.staff_id_input.setMaximumWidth(input_width)
         
         # Add rows to form
         form_layout.addRow("Username:", self.username_input)

@@ -25,11 +25,14 @@ class LightTheme(BaseTheme):
             QWidget#login_form { color: #212121; }
             QLabel[objectName="login_title"] { color: #1976d2; font-size: 18pt; font-weight: bold; margin-bottom: 5px; }
             QLabel[objectName="login_subtitle"] { color: #757575; font-size: 11pt; margin-bottom: 10px; }
-            QLabel[objectName="field_label"] { font-weight: bold; color: #424242; margin-bottom: 5px; }
+            QLabel[objectName="field_label"] { font-weight: bold; color: #424242; margin-bottom: 2px; }
             QLabel[objectName="status_label"] { font-size: 10pt; margin-top: 10px; }
-            QLineEdit[objectName="username_input"], QLineEdit[objectName="password_input"] { border: 2px solid #e0e0e0; border-radius: 4px; padding: 8px; font-size: 11pt; background-color: white; color: #212121; min-height: 35px; selection-background-color: #1976d2; selection-color: white; }
+            QLineEdit[objectName="username_input"], QLineEdit[objectName="password_input"] { border: 2px solid #e0e0e0; border-radius: 4px; padding: 8px; font-size: 11pt; background-color: white; color: #212121; min-height: 31px; selection-background-color: #1976d2; selection-color: white; }
             QLineEdit[objectName="username_input"]:focus, QLineEdit[objectName="password_input"]:focus { border: 2px solid #1976d2; background-color: white; }
-            QPushButton[objectName="password_toggle_btn"] { color: #AAAAAA; background-color: transparent; border: none; font-size: 14pt; }
+            QPushButton[objectName="password_toggle_btn"], QPushButton[objectName="confirm_toggle_btn"] { color: #666666; background-color: transparent; border: none; font-size: 16pt; padding: 0px; font-family: "Segoe UI Symbol", "Apple Color Emoji", sans-serif; }
+            QPushButton[objectName="password_toggle_btn"]:hover, QPushButton[objectName="confirm_toggle_btn"]:hover { color: #666666; background-color: transparent; border: none; }
+            QPushButton[objectName="password_toggle_btn"]:focus, QPushButton[objectName="confirm_toggle_btn"]:focus { color: #666666; background-color: transparent; border: none; outline: none; }
+            QPushButton[objectName="password_toggle_btn"]:pressed, QPushButton[objectName="confirm_toggle_btn"]:pressed { color: #666666; background-color: transparent; border: none; }
             QPushButton[objectName="login_btn"] { background-color: #1976d2; color: white; border: none; border-radius: 4px; font-size: 12pt; font-weight: bold; padding: 10px; min-height: 40px; }
             QPushButton[objectName="login_btn"]:hover { background-color: #1565c0; }
             QPushButton[objectName="login_btn"]:pressed { background-color: #0d47a1; }

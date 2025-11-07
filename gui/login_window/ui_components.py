@@ -50,11 +50,22 @@ class LoginForm(QWidget):
         username_label.setObjectName("field_label")
         layout.addWidget(username_label)
         
+        # Username field with matching width to password
+        username_layout = QHBoxLayout()
+        username_layout.setSpacing(5)
+        username_layout.setContentsMargins(0, 0, 0, 0)
+        
         self.username_input = QLineEdit()
         self.username_input.setObjectName("username_input")
         self.username_input.setPlaceholderText("Enter your username")
         self.username_input.setMinimumHeight(35)
-        layout.addWidget(self.username_input)
+        
+        username_layout.addWidget(self.username_input)
+        username_layout.addSpacing(35)  # Match eye button exact width
+        
+        layout.addLayout(username_layout)
+        
+        layout.addSpacing(15)
         
         # Password field
         password_label = QLabel("Password:")
@@ -64,6 +75,7 @@ class LoginForm(QWidget):
         # Password field with eye button
         password_layout = QHBoxLayout()
         password_layout.setSpacing(5)
+        password_layout.setContentsMargins(0, 0, 0, 0)
         
         self.password_input = QLineEdit()
         self.password_input.setObjectName("password_input")
