@@ -620,13 +620,11 @@ python src/cache_cleaner.py
 
 **Project Maintainer:** Andy Sylvia Rosenvold  
 **Email:** andy.rosenvold@specialisterne.com  
-**Repository:** [Store Database Management System](https://github.com/Sylverose/Store-Database-Management-System)
+**Repository:** https://github.com/Sylverose/Store-Database-Management-System
 
 ## License
 
 MIT License - see LICENSE file for details
-
-
 
 
 
