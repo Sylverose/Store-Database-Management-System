@@ -32,6 +32,9 @@ SCHEMA_DEFINITIONS = {
     'users': """CREATE TABLE IF NOT EXISTS users (user_id INT PRIMARY KEY AUTO_INCREMENT, staff_id INT UNIQUE, username VARCHAR(50) UNIQUE NOT NULL, 
                 password_hash VARCHAR(255) NOT NULL, role ENUM('Employee', 'Manager', 'Administrator') NOT NULL DEFAULT 'Employee', 
                 last_login DATETIME, created_at DATETIME DEFAULT CURRENT_TIMESTAMP, active BOOLEAN DEFAULT TRUE, 
+                failed_login_attempts INT DEFAULT 0, last_failed_login DATETIME, account_locked_until DATETIME, 
+                password_last_changed DATETIME DEFAULT CURRENT_TIMESTAMP, must_change_password BOOLEAN DEFAULT FALSE,
+                two_factor_enabled BOOLEAN DEFAULT FALSE, two_factor_secret VARCHAR(32), backup_codes TEXT,
                 FOREIGN KEY (staff_id) REFERENCES staffs(staff_id) ON DELETE SET NULL, INDEX idx_username (username), 
                 INDEX idx_role (role)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4"""
 }
@@ -46,7 +49,9 @@ TABLE_COLUMNS = {
     'products': ['product_id', 'product_name', 'brand_id', 'category_id', 'model_year', 'list_price'],
     'staffs': ['staff_id', 'name', 'last_name', 'email', 'phone', 'active', 'store_name', 'street', 'manager_id'],
     'stocks': ['store_name', 'product_id', 'quantity'],
-    'users': ['user_id', 'staff_id', 'username', 'password_hash', 'role', 'last_login', 'created_at', 'active']
+    'users': ['user_id', 'staff_id', 'username', 'password_hash', 'role', 'last_login', 'created_at', 'active', 
+              'failed_login_attempts', 'last_failed_login', 'account_locked_until', 'password_last_changed', 
+              'must_change_password', 'two_factor_enabled', 'two_factor_secret', 'backup_codes']
 }
 
 logger = logging.getLogger(__name__)

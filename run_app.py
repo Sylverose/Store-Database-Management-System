@@ -93,8 +93,8 @@ class Application:
     
     def show_login(self):
         """Show standalone login window."""
-        # Create login window
-        self.login_widget = LoginWindow(self.user_manager, self.session_manager)
+        # Create login window with db_connection for 2FA
+        self.login_widget = LoginWindow(self.user_manager, self.session_manager, self.db_connection)
         self.login_widget.login_successful.connect(self.on_login_successful)
         
         # Apply theme
@@ -213,7 +213,7 @@ class Application:
         self.dashboard_widget = None
         
         # Create new login window
-        new_login = LoginWindow(self.user_manager, self.session_manager)
+        new_login = LoginWindow(self.user_manager, self.session_manager, self.db_connection)
         new_login.login_successful.connect(self.on_login_successful)
         
         # Apply theme to new login

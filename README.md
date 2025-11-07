@@ -14,11 +14,13 @@ Enterprise-grade store management application with role-based authentication, re
 
 ### Authentication & Security
 - **Role-Based Access Control**: 3 distinct user levels with granular permissions
+- **Two-Factor Authentication (2FA)**: Mandatory TOTP-based 2FA for administrators
 - **bcrypt Password Hashing**: Industry-standard Argon2-based encryption
 - **Session Management**: Singleton pattern with automatic timeout
 - **Account Lockout**: Protection against brute-force attacks
 - **Password Policy Enforcement**: Complexity requirements with validation
 - **Audit Trail**: Login tracking and failed attempt monitoring
+- **Backup Codes**: Single-use recovery codes for account access
 
 ### User Interface
 - **Modern PySide6 (Qt6)**: Professional desktop application framework
@@ -74,13 +76,15 @@ requests>=2.28.0
 python-dotenv>=1.0.0
 PySide6>=6.4.0
 bcrypt>=4.0.0
+pyotp>=2.9.0
+qrcode>=7.4.2
 reportlab>=4.0.0
 psutil>=5.9.0
 ```
 
 **Install:**
 ```bash
-pip install -r requirements.txt
+pip install pandas pymysql requests python-dotenv PySide6 bcrypt pyotp qrcode reportlab psutil
 ```
 
 ## Installation
@@ -342,6 +346,7 @@ Use the credentials you just created to login.
 
 ### Security Features
 
+- ✅ **Two-Factor Authentication (2FA)**: TOTP-based authentication (mandatory for administrators)
 - ✅ **bcrypt Password Hashing**: Military-grade password encryption
 - ✅ **Account Lockout**: Automatic lockout after failed login attempts
 - ✅ **Password Policy**: Enforces minimum complexity requirements
@@ -349,6 +354,7 @@ Use the credentials you just created to login.
 - ✅ **Session Timeout**: Automatic logout after inactivity
 - ✅ **Password Change Enforcement**: Can require password changes
 - ✅ **Active Status**: Deactivate users without deleting accounts
+- ✅ **Backup Codes**: 8 single-use recovery codes per user
 
 ### Users Table Schema
 
@@ -367,6 +373,9 @@ CREATE TABLE users (
     account_locked_until DATETIME,
     password_last_changed DATETIME DEFAULT CURRENT_TIMESTAMP,
     must_change_password BOOLEAN DEFAULT FALSE,
+    two_factor_enabled BOOLEAN DEFAULT FALSE,
+    two_factor_secret VARCHAR(32),
+    backup_codes TEXT,                      -- JSON array of backup codes
     FOREIGN KEY (staff_id) REFERENCES staffs(staff_id)
 )
 ```
@@ -452,6 +461,116 @@ The system enforces the following password policy:
 - Contact administrator to reset `must_change_password` flag
 - Or implement password change feature (future enhancement)
 
+### Two-Factor Authentication (2FA)
+
+**Overview**
+
+The application uses Time-based One-Time Password (TOTP) authentication for enhanced security. 2FA is **mandatory for all administrators** and optional for other users.
+
+**Supported Authenticator Apps:**
+- Google Authenticator (Android/iOS)
+- Microsoft Authenticator (Android/iOS)
+- Authy (Android/iOS/Desktop)
+- Any TOTP-compatible authenticator
+
+**Setup Process (First Admin Login):**
+
+1. **Login with username and password**
+2. **Mandatory Setup Dialog appears** (administrators only)
+3. **Scan QR Code**:
+   - Open your authenticator app
+   - Tap "+" or "Add Account"
+   - Scan the QR code displayed on screen
+   - Account will be added as "Store Manager - [your_username]"
+4. **Save Backup Codes**:
+   - 8 single-use backup codes are displayed
+   - **Save these securely** (screenshot, print, or write down)
+   - Each code can only be used once
+5. **Verify Setup**:
+   - Enter the 6-digit code from your authenticator app
+   - Click "Enable 2FA"
+   - Setup is complete!
+
+**Using 2FA During Login:**
+
+1. Enter username and password as normal
+2. **After password verification**, 2FA dialog appears
+3. Open your authenticator app
+4. Enter the current 6-digit code (refreshes every 30 seconds)
+5. Click "Verify"
+6. Login complete!
+
+**Using Backup Codes:**
+
+If you don't have access to your authenticator app:
+
+1. During 2FA verification, click "Use Backup Code"
+2. Enter one of your 8 backup codes
+3. Code will be consumed after use
+4. Regenerate codes via Security Settings
+
+**Managing 2FA Settings:**
+
+After login, access Security Settings:
+1. Click the **⚙ gear icon** (top right corner of dashboard)
+2. Select **"Security Settings (2FA)"**
+3. Available options:
+   - **View QR Code**: Re-display QR code to add to another device
+   - **View Backup Codes**: See remaining unused backup codes
+   - **Regenerate Backup Codes**: Create new set of 8 codes (invalidates old ones)
+   - **Disable 2FA**: Turn off 2FA (not recommended for administrators)
+
+**2FA Enforcement Rules:**
+
+| User Role | 2FA Requirement | Can Disable? |
+|-----------|----------------|--------------|
+| Administrator | **Mandatory** | Not recommended (security risk) |
+| Manager | Optional | Yes |
+| Employee | Optional | Yes |
+
+**Security Best Practices:**
+
+- ✅ **Save backup codes** immediately during setup
+- ✅ **Store backup codes securely** (password manager, safe location)
+- ✅ **Add to multiple devices** (backup phone, tablet)
+- ✅ **Regenerate backup codes** if you suspect compromise
+- ❌ **Don't share** QR codes or backup codes with anyone
+- ❌ **Don't screenshot** QR codes and share via insecure channels
+- ❌ **Don't disable 2FA** if you're an administrator
+
+**Troubleshooting 2FA:**
+
+**"Invalid verification code"**
+- Codes expire every 30 seconds - use the current code
+- Check your device's time is correct (TOTP requires accurate time)
+- Ensure you're looking at the correct account in your authenticator app
+
+**"Lost access to authenticator app"**
+- Use one of your backup codes to login
+- After login, go to Security Settings to regenerate codes or reset 2FA
+- Contact another administrator if you're locked out
+
+**"QR code won't scan"**
+- Try manual entry: Click "Manual Entry" in your authenticator app
+- Enter the secret key displayed below the QR code
+- Account name: Store Manager
+- Username: [your_username]
+
+**"Need to reset 2FA for a user" (Admin only)**
+```sql
+-- Connect to MySQL
+mysql -u root -p
+
+USE store_manager;
+
+-- Disable 2FA for a user (emergency only)
+UPDATE users 
+SET two_factor_enabled = FALSE, 
+    two_factor_secret = NULL, 
+    backup_codes = NULL 
+WHERE username = 'locked_out_user';
+```
+
 ## Project Structure
 
 ```
@@ -466,6 +585,8 @@ ETL/
 │   ├── dashboard_window/          # Main dashboard
 │   ├── admin_window/              # Database management
 │   ├── user_management/           # User CRUD
+│   ├── two_factor_setup_dialog.py # 2FA setup/management
+│   ├── two_factor_verify_dialog.py # 2FA login verification
 │   ├── tabbed_window.py           # Window container
 │   └── themes/                    # Theme system
 │       ├── base_theme.py
@@ -481,6 +602,7 @@ ETL/
 │   │   ├── password_policy.py
 │   │   ├── user_authenticator.py
 │   │   ├── user_repository.py
+│   │   ├── two_factor_auth.py     # 2FA TOTP logic
 │   │   ├── session.py
 │   │   ├── session_timeout.py
 │   │   ├── account_lockout.py
@@ -503,7 +625,6 @@ ETL/
 ├── run_app.py                     # Main entry (with auth)
 ├── run_admin_direct.py            # Direct admin (no auth)
 ├── initialize_auth.py             # Auth setup
-└── requirements.txt
 ```
 
 ## Database Configuration
