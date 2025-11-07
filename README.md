@@ -620,11 +620,12 @@ python src/cache_cleaner.py
 
 **Project Maintainer:** Andy Sylvia Rosenvold  
 **Email:** andy.rosenvold@specialisterne.com  
-**Repository:** [https://github.com/Sylverose/Advanced-Python-ETL-Pipeline-with-GUI](https://github.com/Sylverose/Store-Database-Management-System)
+**Repository:** [Store Database Management System](https://github.com/Sylverose/Store-Database-Management-System)
 
 ## License
 
 MIT License - see LICENSE file for details
+
 
 
 
