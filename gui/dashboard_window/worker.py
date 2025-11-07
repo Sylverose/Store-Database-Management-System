@@ -113,6 +113,7 @@ class DashboardWorker(BaseWorker):
             self.error.emit("Database modules not available")
             return
         
+        db_manager = None
         try:
             from src.database.db_manager import DatabaseManager
             
@@ -120,7 +121,14 @@ class DashboardWorker(BaseWorker):
             db_manager = DatabaseManager()
             
             with db_manager.get_connection() as conn:
-                cursor = conn.cursor(dictionary=True)
+                # Try mysql.connector style first, then PyMySQL style
+                try:
+                    cursor = conn.cursor(dictionary=True)
+                except TypeError:
+                    # If dictionary=True fails, try PyMySQL style
+                    import pymysql.cursors
+                    cursor = conn.cursor(pymysql.cursors.DictCursor)
+                
                 cursor.execute('''
                     SELECT customer_id, first_name, last_name, email 
                     FROM customers 
@@ -134,6 +142,8 @@ class DashboardWorker(BaseWorker):
                 
         except Exception as e:
             self.error.emit(f"Failed to fetch customers: {str(e)}")
+        finally:
+            db_manager = None
     
     def _fetch_employees(self):
         """Fetch users with Employee role"""
@@ -141,6 +151,7 @@ class DashboardWorker(BaseWorker):
             self.error.emit("Database modules not available")
             return
         
+        db_manager = None
         try:
             from src.database.db_manager import DatabaseManager
             
@@ -148,7 +159,14 @@ class DashboardWorker(BaseWorker):
             db_manager = DatabaseManager()
             
             with db_manager.get_connection() as conn:
-                cursor = conn.cursor(dictionary=True)
+                # Try mysql.connector style first, then PyMySQL style
+                try:
+                    cursor = conn.cursor(dictionary=True)
+                except TypeError:
+                    # If dictionary=True fails, try PyMySQL style
+                    import pymysql.cursors
+                    cursor = conn.cursor(pymysql.cursors.DictCursor)
+                
                 cursor.execute('''
                     SELECT u.username, s.name, s.last_name, s.email
                     FROM users u
@@ -164,6 +182,8 @@ class DashboardWorker(BaseWorker):
                 
         except Exception as e:
             self.error.emit(f"Failed to fetch employees: {str(e)}")
+        finally:
+            db_manager = None
     
     def _fetch_my_manager(self):
         """Fetch current user's manager information"""

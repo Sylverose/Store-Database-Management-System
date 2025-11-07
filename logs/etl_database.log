@@ -652,3 +652,99 @@
 2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
 2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
 2025-11-07 10:13:24 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 10:50:27 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 10:50:29 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 10:57:46 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 10:57:47 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: brands
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: categories
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: stores
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: staffs
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: customers
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: products
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: stocks
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: orders
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | Created/verified table: order_items
+2025-11-07 11:57:57 | INFO     | no-corre | etl.database         | All 9 tables created successfully
+2025-11-07 11:57:59 | ERROR    | no-corre | etl.database         | Failed to get database connection for table creation
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 11:58:02 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 11:58:02 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 12:08:27 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 12:08:28 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: brands
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: categories
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: stores
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: staffs
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: customers
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: products
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: stocks
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: orders
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | Created/verified table: order_items
+2025-11-07 12:08:29 | INFO     | no-corre | etl.database         | All 9 tables created successfully
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 12:21:13 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 12:21:14 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 12:21:14 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 12:21:14 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 12:21:14 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: brands
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: categories
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: stores
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: staffs
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: customers
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: products
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: stocks
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: orders
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: order_items
+2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | All 9 tables created successfully
