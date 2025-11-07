@@ -1,11 +1,10 @@
 """
-User authentication operations.
+User authentication and verification.
 """
 
 import logging
 from typing import Optional, Dict, Any
 from datetime import datetime
-import pymysql
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +35,14 @@ class UserAuthenticator:
             Dict with user info if authenticated, None otherwise
         """
         try:
-            cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            # Try mysql.connector style first, then PyMySQL style
+            try:
+                cursor = self.db_connection.cursor(dictionary=True)
+            except TypeError:
+                # If dictionary=True fails, try PyMySQL style
+                import pymysql.cursors
+                cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            
             query = """
                 SELECT u.user_id, u.username, u.password_hash, u.role, u.staff_id, u.active,
                        s.name, s.last_name, s.email

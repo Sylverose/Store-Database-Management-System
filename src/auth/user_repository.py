@@ -5,7 +5,7 @@ User data access and CRUD operations.
 import logging
 from typing import Optional, Dict, Any, List
 from datetime import datetime
-import pymysql
+import mysql.connector
 
 logger = logging.getLogger(__name__)
 
@@ -51,11 +51,12 @@ class UserRepository:
             logger.info(f"Created user '{username}' with role '{role}'")
             return True
             
-        except pymysql.IntegrityError as e:
-            logger.error(f"Failed to create user '{username}': {e}")
-            return False
-        except Exception as e:
-            logger.error(f"Error creating user '{username}': {e}")
+        except (mysql.connector.IntegrityError, Exception) as e:
+            # Handle IntegrityError from both mysql.connector and pymysql
+            if 'Duplicate entry' in str(e) or 'IntegrityError' in type(e).__name__:
+                logger.error(f"Failed to create user '{username}': Duplicate entry or integrity constraint")
+            else:
+                logger.error(f"Error creating user '{username}': {e}")
             return False
     
     def get_user_by_id(self, user_id: int) -> Optional[Dict[str, Any]]:
@@ -69,7 +70,14 @@ class UserRepository:
             Dict with user info or None
         """
         try:
-            cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            # Try mysql.connector style first, then PyMySQL style
+            try:
+                cursor = self.db_connection.cursor(dictionary=True)
+            except TypeError:
+                # If dictionary=True fails, try PyMySQL style
+                import pymysql.cursors
+                cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            
             query = """
                 SELECT u.user_id, u.username, u.role, u.staff_id, u.active, u.last_login, u.created_at,
                        s.name, s.last_name, s.email, s.phone
@@ -94,7 +102,14 @@ class UserRepository:
             List of user dictionaries
         """
         try:
-            cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            # Try mysql.connector style first, then PyMySQL style
+            try:
+                cursor = self.db_connection.cursor(dictionary=True)
+            except TypeError:
+                # If dictionary=True fails, try PyMySQL style
+                import pymysql.cursors
+                cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            
             query = """
                 SELECT u.user_id, u.username, u.role, u.staff_id, u.active, u.last_login, u.created_at,
                        s.name, s.last_name, s.email

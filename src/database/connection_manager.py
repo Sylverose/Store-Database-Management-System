@@ -133,9 +133,18 @@ class ConnectionPool:
     
     def _release(self, conn):
         """Release connection back to pool."""
-        if not conn or self._pool_type == 'native':
+        if not conn:
             return
         
+        # For native pool, close connection to return it to pool
+        if self._pool_type == 'native':
+            try:
+                conn.close()
+            except:
+                pass
+            return
+        
+        # For manual pool, return connection to pool
         with self._lock:
             self._used.discard(conn)
             if len(self._pool) < self.pool_size:

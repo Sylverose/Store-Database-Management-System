@@ -56,6 +56,7 @@ Enterprise-grade store management application with role-based authentication, re
 
 ### Development Features
 - **Modular Architecture**: Separation of concerns with clear interfaces
+- **Refactored Codebase**: Dashboard and admin windows use UI builder + handler pattern (64% code reduction)
 - **Facade Pattern**: Simplified interfaces for complex subsystems
 - **Worker Thread Pattern**: Async operations with Qt signals/slots
 - **Comprehensive Logging**: Structured JSON logs with correlation IDs
@@ -71,7 +72,8 @@ Enterprise-grade store management application with role-based authentication, re
 ### Python Dependencies
 ```
 pandas>=2.0.0
-pymysql>=1.0.0
+pymysql>=1.0.0              # Primary MySQL driver (pure Python)
+mysql-connector-python>=8.0  # Fallback MySQL driver (optional)
 requests>=2.28.0
 python-dotenv>=1.0.0
 PySide6>=6.4.0
@@ -84,8 +86,14 @@ psutil>=5.9.0
 
 **Install:**
 ```bash
+# Core dependencies (PyMySQL)
 pip install pandas pymysql requests python-dotenv PySide6 bcrypt pyotp qrcode reportlab psutil
+
+# Optional: mysql-connector-python (automatic fallback if PyMySQL unavailable)
+pip install mysql-connector-python
 ```
+
+**Note**: Application works with either PyMySQL or mysql-connector-python. PyMySQL is recommended for Python 3.13+ compatibility.
 
 ## Installation
 
@@ -578,16 +586,36 @@ ETL/
 ├── data/
 │   ├── CSV/                       # CSV data sources
 │   ├── API/                       # API exports
+│   ├── print/                     # Generated PDF reports
 │   ├── data_model.md
 │   └── etl_data_model_diagram.mmd
 ├── gui/
-│   ├── login_window/              # Authentication
+│   ├── login_window/              # Authentication UI
+│   │   ├── window.py
+│   │   ├── worker.py
+│   │   └── ui_components.py
 │   ├── dashboard_window/          # Main dashboard
+│   │   ├── window.py             # Orchestration
+│   │   ├── ui_builder.py         # UI construction
+│   │   ├── data_handler.py       # Data operations
+│   │   ├── worker.py
+│   │   ├── ui_components.py
+│   │   └── gauge_widget.py       # Sales visualization
 │   ├── admin_window/              # Database management
+│   │   ├── window.py             # Orchestration
+│   │   ├── ui_builder.py         # UI construction
+│   │   ├── operation_handler.py  # ETL operations
+│   │   ├── worker.py
+│   │   └── ui_components.py
 │   ├── user_management/           # User CRUD
+│   │   ├── user_management_dialog.py
+│   │   ├── create_user_widget.py
+│   │   └── manage_users_widget.py
 │   ├── two_factor_setup_dialog.py # 2FA setup/management
 │   ├── two_factor_verify_dialog.py # 2FA login verification
 │   ├── tabbed_window.py           # Window container
+│   ├── base_worker.py             # Base worker thread
+│   ├── path_config.py
 │   └── themes/                    # Theme system
 │       ├── base_theme.py
 │       ├── dark_theme.py
@@ -598,34 +626,99 @@ ETL/
 ├── src/
 │   ├── auth/                      # Authentication system
 │   │   ├── user_manager.py        # Main facade
-│   │   ├── password_handler.py
-│   │   ├── password_policy.py
-│   │   ├── user_authenticator.py
-│   │   ├── user_repository.py
+│   │   ├── password_handler.py    # bcrypt hashing
+│   │   ├── password_policy.py     # Complexity rules
+│   │   ├── user_authenticator.py  # Login logic
+│   │   ├── user_repository.py     # Database CRUD
 │   │   ├── two_factor_auth.py     # 2FA TOTP logic
-│   │   ├── session.py
-│   │   ├── session_timeout.py
-│   │   ├── account_lockout.py
-│   │   └── permissions.py
+│   │   ├── session.py             # Session management
+│   │   ├── session_timeout.py     # Auto timeout
+│   │   ├── account_lockout.py     # Brute-force protection
+│   │   ├── permissions.py         # Role-based access
+│   │   └── migration_*.py         # Schema migrations
 │   ├── api/                       # API client
+│   │   ├── api_client.py
+│   │   ├── api_models.py
+│   │   ├── rate_limiter.py
+│   │   ├── retry_handler.py
+│   │   └── data_processor.py
 │   ├── config/                    # Configuration
+│   │   ├── database.py
+│   │   ├── api.py
+│   │   └── environments.py
 │   ├── database/                  # Database operations
-│   │   ├── db_manager.py
-│   │   ├── connection_manager.py
-│   │   ├── csv_operations.py
-│   │   ├── data_from_api.py
-│   │   ├── pdf_generator.py      # PDF reports
-│   │   ├── schema_manager.py
+│   │   ├── db_manager.py          # Main database facade
+│   │   ├── connection_manager.py  # Connection pooling
+│   │   ├── csv_operations.py      # CSV import/export
+│   │   ├── data_from_api.py       # API data handling
+│   │   ├── pdf_generator.py       # PDF reports
+│   │   ├── schema_manager.py      # Table creation
+│   │   ├── data_validator.py      # Data integrity
+│   │   ├── pandas_optimizer.py    # Performance tuning
 │   │   ├── batch_operations/
 │   │   └── utilities/
 │   ├── exceptions/                # Exception handling
+│   │   └── etl_exceptions.py
 │   └── logs/
+│       └── logging_system.py
 ├── logs/
+│   └── etl_structured.json        # Application logs
 ├── tests/
+│   ├── run_tests.py
+│   ├── test_api_csv_export.py
+│   └── test_csv_access.py
 ├── run_app.py                     # Main entry (with auth)
 ├── run_admin_direct.py            # Direct admin (no auth)
 ├── initialize_auth.py             # Auth setup
+├── clean_logs.ps1                 # Log cleanup utility
+├── cache_cleaner.py               # Cache management
+├── REFACTORING_SUMMARY.md         # Code refactoring details
+├── 2FA_IMPLEMENTATION.md          # 2FA documentation
+├── 2FA_INTEGRATION_OPTIONS.md     # 2FA setup guide
+├── SECURITY_ENHANCEMENT_OPTIONS.md # Security features
+└── README.md                      # This file
 ```
+
+### Architecture Highlights
+
+**Refactored Components** (November 2024):
+- **Dashboard Window**: Reduced from 592 → 211 lines (64% reduction)
+  - `window.py` - Main orchestration (211 lines)
+  - `ui_builder.py` - UI construction (206 lines)
+  - `data_handler.py` - Data operations & event handling (270 lines)
+  - `worker.py` - Async database operations (313 lines)
+  - `gauge_widget.py` - Sales visualization widget (97 lines)
+  
+- **Admin Window**: Reduced from 404 → 147 lines (64% reduction)
+  - `window.py` - Main orchestration (147 lines)
+  - `ui_builder.py` - UI construction (200 lines)
+  - `operation_handler.py` - ETL operations logic (287 lines)
+  - `worker.py` - Async ETL operations (385 lines)
+
+**Connection Management** (November 2024):
+- **Dual-Driver Support**: Compatible with both PyMySQL and mysql.connector
+  - Automatic fallback pattern for cursor creation
+  - Try mysql.connector `cursor(dictionary=True)` first
+  - Fall back to PyMySQL `cursor(pymysql.cursors.DictCursor)` if needed
+- **Connection Pooling**: Native MySQL connection pool with proper release
+  - Pool size: 5 connections (configurable)
+  - Automatic connection return to pool via `conn.close()`
+  - Context manager pattern for safe resource management
+- **Race Condition Fix**: 150ms delayed sales fetch prevents UI initialization conflicts
+  - Ensures widgets are ready before data loads
+  - Works consistently across all user roles
+
+**2FA Flow**:
+- Login → Check 2FA status → Verify TOTP code → Create session → Dashboard
+- Setup QR → Scan with authenticator → Verify code → Generate backup codes → Save
+
+**Worker Thread Pattern**:
+- Async operations use QThread with signals/slots
+- Progress updates via Qt signals
+- Non-blocking UI during database operations
+- Proper worker cleanup with deleteLater()
+
+See `REFACTORING_SUMMARY.md` for detailed refactoring documentation.
 
 ## Database Configuration
 
@@ -689,7 +782,18 @@ SELECT * FROM products LIMIT 10;
 
 ### Connection Details
 
-- **Driver**: PyMySQL (pure Python MySQL client)
+- **Driver**: Dual-driver support (PyMySQL primary, mysql.connector fallback)
+- **Connection Pool**: Native MySQL pooling with 5 connections
+  - Automatic connection recycling
+  - Thread-safe connection management
+  - Context manager pattern for safety
+- **Port**: 3306 (default MySQL port)
+- **Charset**: utf8mb4 with utf8mb4_unicode_ci collation
+- **Engine**: InnoDB (ACID-compliant transactions)
+- **Cursor Type**: Dictionary cursors for easy data access
+  - PyMySQL: `DictCursor` (returns dict rows)
+  - mysql.connector: `dictionary=True` (returns dict rows)
+  - Automatic fallback between drivers
 - **Engine**: InnoDB (supports foreign keys and transactions)
 - **Connection Pooling**: Managed automatically
 - **Auto-commit**: Disabled (explicit transaction control)
@@ -697,45 +801,159 @@ SELECT * FROM products LIMIT 10;
 
 ## Architecture
 
-### GUI Components
+### Application Flow
 ```
-run_app.py → LoginWindow → TabbedMainWindow
-                              ├── DashboardWindow (role-based)
-                              ├── ETLMainWindow (Admin only)
-                              └── UserManagementDialog (Admin only)
+run_app.py → LoginWindow → TwoFactorVerifyDialog → TabbedMainWindow
+                                                         ├── DashboardWindow (all roles)
+                                                         ├── ETLMainWindow (Admin only)
+                                                         └── UserManagementDialog (Admin only)
 ```
 
-### Authentication Flow
+### GUI Components (Refactored Architecture)
+
+**Dashboard Window** (Clean separation of concerns):
+```
+DashboardMainWindow (211 lines)
+    ├── DashboardUIBuilder (205 lines)
+    │   ├── Database management section
+    │   ├── Employee list (Manager/Admin)
+    │   ├── Content section (tables + gauge)
+    │   ├── Logout section
+    │   └── Toolbar with settings
+    │
+    └── DashboardDataHandler (271 lines)
+        ├── Customer loading
+        ├── Employee loading
+        ├── PDF generation
+        ├── Sales data fetching
+        └── Worker thread management
+```
+
+**Admin Window** (Clean separation of concerns):
+```
+ETLMainWindow (147 lines)
+    ├── AdminUIBuilder (200 lines)
+    │   ├── API configuration section
+    │   ├── File selection section
+    │   ├── Data loading section
+    │   ├── Database operations section
+    │   └── Test operations section
+    │
+    └── AdminOperationHandler (287 lines)
+        ├── Status initialization
+        ├── Operation execution
+        ├── CSV file selection
+        ├── API data loading
+        └── Worker thread management
+```
+
+### Authentication System
 ```
 UserManager (Facade)
     ├── PasswordHandler → bcrypt hashing
-    ├── UserAuthenticator → login/session
-    └── UserRepository → CRUD operations
+    ├── UserAuthenticator → login validation
+    ├── TwoFactorAuth → TOTP generation/verification
+    ├── UserRepository → database CRUD
+    ├── SessionManager → active session tracking
+    ├── AccountLockout → brute-force protection
+    └── PasswordPolicy → complexity enforcement
+```
+
+### Two-Factor Authentication Flow
+```
+1. User enters credentials → UserAuthenticator validates
+2. If Admin → Check 2FA enabled
+   - Not enabled → Force setup with TwoFactorSetupDialog
+   - Enabled → Show TwoFactorVerifyDialog
+3. Verify TOTP code or backup code → TwoFactorAuth.verify_code()
+4. Success → SessionManager.start_session()
 ```
 
 ### Theme System
 ```
-ThemeManager
+ThemeManager (Singleton)
     ├── BaseTheme (Abstract)
-    ├── LightTheme
-    └── DarkTheme
+    ├── LightTheme → Professional light colors
+    └── DarkTheme → Professional dark colors
+    
+Applied via: app.setStyleSheet(theme.get_stylesheet())
 ```
 
 ### Database Operations
 ```
 DatabaseManager
-    ├── ConnectionManager → PyMySQL pooling
-    ├── CSVOperations → pandas import/export
-    ├── SchemaManager → table creation/validation
-    └── BatchOperations → optimized bulk operations
+    ├── ConnectionManager → PyMySQL connection pooling
+    ├── CSVOperations → pandas import/export with validation
+    ├── SchemaManager → table creation/migration
+    ├── PDFGenerator → reportlab customer reports
+    ├── DataValidator → schema alignment checks
+    └── BatchOperations → optimized bulk insert/update
 ```
+
+### Worker Thread Pattern
+```
+BaseWorker (QThread)
+    ├── DashboardWorker → fetch_customers, fetch_employees, fetch_sales
+    └── ETLWorker → load_csv, load_api, create_tables, test_connection
+    
+Signals: progress, finished, error, data_ready
+Slots: cancel() for graceful shutdown
+```
+
+## Technical Notes
+
+### Recent Bug Fixes (November 2024)
+
+**Connection Pool Exhaustion Issue**:
+- **Problem**: MySQL native connection pool connections were not being returned after use
+- **Cause**: `_release()` method in `connection_manager.py` returned early for native pools
+- **Solution**: Modified `_release()` to call `conn.close()` for native pools, properly returning connections to the pool
+- **Impact**: Fixed "pool exhausted" errors when multiple workers run simultaneously
+
+**Cursor API Compatibility**:
+- **Problem**: Application uses both PyMySQL and mysql.connector drivers with different cursor APIs
+- **Cause**: `connect.py` prioritizes PyMySQL, but code used mysql.connector syntax `cursor(dictionary=True)`
+- **Solution**: Implemented dual-driver fallback pattern in all cursor creation:
+  ```python
+  try:
+      cursor = conn.cursor(dictionary=True)  # mysql.connector
+  except TypeError:
+      import pymysql.cursors
+      cursor = conn.cursor(pymysql.cursors.DictCursor)  # PyMySQL
+  ```
+- **Files Updated**: `worker.py`, `user_authenticator.py`, `password_handler.py`, `user_repository.py`
+- **Impact**: Works seamlessly with either database driver installed
+
+**Sales Gauge Race Condition**:
+- **Problem**: Sales gauge would randomly not display on different user roles
+- **Cause**: Multiple workers starting simultaneously created timing issues where data arrived before widget was ready
+- **Solution**: Delayed sales fetch by 150ms in `initialize_dashboard()` to ensure UI is fully initialized
+- **Impact**: Consistent gauge display across all roles (Employee, Manager, Administrator)
+
+### Performance Considerations
+
+**Connection Pooling**:
+- Pool size: 5 connections (sufficient for typical concurrent operations)
+- Maximum simultaneous workers: 4 (tables, customers, employees, sales)
+- Connection reuse reduces overhead and prevents exhaustion
+
+**Worker Thread Management**:
+- All database operations run in background threads (QThread)
+- UI remains responsive during long operations
+- Workers automatically cleaned up with `deleteLater()`
+
+**Data Loading Strategy**:
+- Tables list: Immediate fetch on dashboard load
+- Customer dropdown: Immediate fetch (needed for all roles)
+- Employee list: Conditional fetch (Manager/Admin only)
+- Sales gauge: Delayed 150ms fetch (prevents race condition)
 
 ## Testing
 
 ```bash
 cd tests && python run_tests.py
 python src/cache_cleaner.py
-```
+````
 
 ## Contact
 

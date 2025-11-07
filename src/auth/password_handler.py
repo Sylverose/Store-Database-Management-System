@@ -5,7 +5,6 @@ Password hashing and verification operations.
 import logging
 import bcrypt
 from typing import Optional
-import pymysql
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +61,14 @@ class PasswordHandler:
             bool: True if password changed successfully
         """
         try:
-            cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            # Try mysql.connector style first, then PyMySQL style
+            try:
+                cursor = self.db_connection.cursor(dictionary=True)
+            except TypeError:
+                # If dictionary=True fails, try PyMySQL style
+                import pymysql.cursors
+                cursor = self.db_connection.cursor(pymysql.cursors.DictCursor)
+            
             query = "SELECT password_hash FROM users WHERE user_id = %s"
             cursor.execute(query, (user_id,))
             user = cursor.fetchone()
