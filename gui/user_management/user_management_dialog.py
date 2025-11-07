@@ -66,17 +66,6 @@ class UserManagementDialog(QWidget):
         self.tabs.addTab(self.manage_widget, "Manage Users")
         
         main_layout.addWidget(self.tabs)
-        
-        # Close button
-        close_layout = QHBoxLayout()
-        close_layout.addStretch()
-        
-        close_btn = QPushButton("Close")
-        close_btn.setObjectName("close_btn")
-        close_btn.clicked.connect(self.close)
-        close_layout.addWidget(close_btn)
-        
-        main_layout.addLayout(close_layout)
     
     def _connect_database(self):
         """Connect to database and initialize UserManager"""

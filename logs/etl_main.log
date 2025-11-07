@@ -8535,3 +8535,331 @@
 2025-11-07 10:01:36 | INFO     | no-corre | dashboard_window.window | User confirmed logout
 2025-11-07 10:01:36 | INFO     | no-corre | __main__             | Logout - returning to login
 2025-11-07 10:01:37 | INFO     | no-corre | __main__             | Logout completed
+2025-11-07 10:12:09 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 10:12:27 | INFO     | no-corre | login_window.window  | Login requested for username: admin
+2025-11-07 10:12:27 | INFO     | no-corre | login_window.worker  | Authenticating user 'admin'
+2025-11-07 10:12:27 | INFO     | no-corre | auth.user_authenticator | User 'admin' authenticated successfully
+2025-11-07 10:12:27 | INFO     | no-corre | login_window.window  | Login successful for user: admin
+2025-11-07 10:12:57 | INFO     | no-corre | two_factor_verify_dialog | 2FA verification successful for user: admin
+2025-11-07 10:12:57 | INFO     | no-corre | auth.session         | Session started for user 'admin' with role 'Administrator'
+2025-11-07 10:12:57 | INFO     | no-corre | __main__             | Login successful: admin (Administrator)
+2025-11-07 10:12:57 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:12:57 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:12:57 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - admin (Administrator)
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:12:57 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 10:12:57 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 10:12:57 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:12:57 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:12:57 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:12:57 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 10:13:18 | INFO     | no-corre | tabbed_window        | Added tab: Database Management
+2025-11-07 10:13:18 | INFO     | no-corre | __main__             | Opened Database Management tab
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 10:13:22 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 10:13:24 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 10:13:29 | INFO     | no-corre | tabbed_window        | Detached tab 'Database Management' to standalone window
+2025-11-07 10:13:33 | INFO     | no-corre | tabbed_window        | Added tab: Database Management
+2025-11-07 10:13:33 | INFO     | no-corre | tabbed_window        | Reattached window 'Database Management' as tab
+2025-11-07 10:13:38 | INFO     | no-corre | tabbed_window        | Added tab: User Management
+2025-11-07 10:13:38 | INFO     | no-corre | __main__             | Opened User Management tab
+2025-11-07 10:13:57 | INFO     | no-corre | auth.session         | Session ended for user 'admin'
+2025-11-07 10:13:57 | INFO     | no-corre | dashboard_window.window | User confirmed logout
+2025-11-07 10:13:57 | INFO     | no-corre | __main__             | Logout - returning to login
+2025-11-07 10:13:58 | INFO     | no-corre | __main__             | Logout completed
+2025-11-07 10:14:24 | INFO     | no-corre | login_window.window  | Login requested for username: jd_xtreme
+2025-11-07 10:14:24 | INFO     | no-corre | login_window.worker  | Authenticating user 'jd_xtreme'
+2025-11-07 10:14:24 | INFO     | no-corre | auth.user_authenticator | User 'jd_xtreme' authenticated successfully
+2025-11-07 10:14:24 | INFO     | no-corre | login_window.window  | Login successful for user: jd_xtreme
+2025-11-07 10:14:24 | INFO     | no-corre | auth.session         | Session started for user 'jd_xtreme' with role 'Manager'
+2025-11-07 10:14:24 | INFO     | no-corre | __main__             | Login successful: jd_xtreme (Manager)
+2025-11-07 10:14:24 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:14:24 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:14:24 | INFO     | no-corre | __main__             | Manage Database button disabled for role: Manager
+2025-11-07 10:14:24 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - jd_xtreme (Manager)
+2025-11-07 10:14:24 | ERROR    | no-corre | src.database.connection_manager | Native pool acquire failed: Failed getting connection; pool exhausted
+2025-11-07 10:14:24 | ERROR    | no-corre | src.database.connection_manager | Native pool acquire failed: Failed getting connection; pool exhausted
+2025-11-07 10:14:24 | ERROR    | no-corre | src.database.connection_manager | Native pool acquire failed: Failed getting connection; pool exhausted
+2025-11-07 10:14:24 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:16:32 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 10:16:49 | INFO     | no-corre | login_window.window  | Login requested for username: jd_xtreme
+2025-11-07 10:16:49 | INFO     | no-corre | login_window.worker  | Authenticating user 'jd_xtreme'
+2025-11-07 10:16:50 | WARNING  | no-corre | auth.user_authenticator | Authentication failed: Invalid password for user 'jd_xtreme'
+2025-11-07 10:16:50 | WARNING  | no-corre | login_window.window  | Login failed: Invalid credentials
+2025-11-07 10:16:58 | INFO     | no-corre | login_window.window  | Login requested for username: jd_xtreme
+2025-11-07 10:16:58 | INFO     | no-corre | login_window.worker  | Authenticating user 'jd_xtreme'
+2025-11-07 10:16:58 | WARNING  | no-corre | auth.user_authenticator | Authentication failed: Invalid password for user 'jd_xtreme'
+2025-11-07 10:16:58 | WARNING  | no-corre | login_window.window  | Login failed: Invalid credentials
+2025-11-07 10:16:59 | INFO     | no-corre | login_window.window  | Login requested for username: jd_xtreme
+2025-11-07 10:16:59 | INFO     | no-corre | login_window.worker  | Authenticating user 'jd_xtreme'
+2025-11-07 10:17:00 | INFO     | no-corre | auth.user_authenticator | User 'jd_xtreme' authenticated successfully
+2025-11-07 10:17:00 | INFO     | no-corre | login_window.window  | Login successful for user: jd_xtreme
+2025-11-07 10:17:00 | INFO     | no-corre | auth.session         | Session started for user 'jd_xtreme' with role 'Manager'
+2025-11-07 10:17:00 | INFO     | no-corre | __main__             | Login successful: jd_xtreme (Manager)
+2025-11-07 10:17:00 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:17:00 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:17:00 | INFO     | no-corre | dashboard_window.window | Starting customer load...
+2025-11-07 10:17:00 | INFO     | no-corre | __main__             | Manage Database button disabled for role: Manager
+2025-11-07 10:17:00 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - jd_xtreme (Manager)
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:17:00 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 10:17:00 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 10:17:00 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:17:00 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:17:00 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:17:00 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 10:17:00 | INFO     | no-corre | dashboard_window.window | Customer data received: 1445 customers
+2025-11-07 10:17:00 | INFO     | no-corre | dashboard_window.window | Customer dropdown populated successfully
+2025-11-07 10:17:19 | INFO     | no-corre | src.database.pdf_generator | Generated customer report: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\print\customer_report_1135_Alisia_Albert_20251107_101719.pdf
+2025-11-07 10:18:57 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 10:19:10 | INFO     | no-corre | login_window.window  | Login requested for username: vs_xtreme
+2025-11-07 10:19:10 | INFO     | no-corre | login_window.worker  | Authenticating user 'vs_xtreme'
+2025-11-07 10:19:10 | WARNING  | no-corre | auth.user_authenticator | Authentication failed: User 'vs_xtreme' not found
+2025-11-07 10:19:10 | WARNING  | no-corre | login_window.window  | Login failed: Invalid credentials
+2025-11-07 10:19:18 | INFO     | no-corre | login_window.window  | Login requested for username: gs_xtreme
+2025-11-07 10:19:18 | INFO     | no-corre | login_window.worker  | Authenticating user 'gs_xtreme'
+2025-11-07 10:19:18 | INFO     | no-corre | auth.user_authenticator | User 'gs_xtreme' authenticated successfully
+2025-11-07 10:19:18 | INFO     | no-corre | login_window.window  | Login successful for user: gs_xtreme
+2025-11-07 10:19:18 | INFO     | no-corre | auth.session         | Session started for user 'gs_xtreme' with role 'Employee'
+2025-11-07 10:19:18 | INFO     | no-corre | __main__             | Login successful: gs_xtreme (Employee)
+2025-11-07 10:19:18 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:19:18 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:19:18 | INFO     | no-corre | dashboard_window.window | Starting customer load...
+2025-11-07 10:19:18 | INFO     | no-corre | __main__             | Manage Database button disabled for role: Employee
+2025-11-07 10:19:18 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - gs_xtreme (Employee)
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:19:18 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 10:19:18 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 10:19:18 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:19:18 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:19:19 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:19:19 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:19:19 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 10:19:19 | INFO     | no-corre | dashboard_window.window | Customer data received: 1445 customers
+2025-11-07 10:19:19 | INFO     | no-corre | dashboard_window.window | Customer dropdown populated successfully
+2025-11-07 10:20:38 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 10:20:47 | INFO     | no-corre | login_window.window  | Login requested for username: gs_xtreme
+2025-11-07 10:20:47 | INFO     | no-corre | login_window.worker  | Authenticating user 'gs_xtreme'
+2025-11-07 10:20:48 | INFO     | no-corre | auth.user_authenticator | User 'gs_xtreme' authenticated successfully
+2025-11-07 10:20:48 | INFO     | no-corre | login_window.window  | Login successful for user: gs_xtreme
+2025-11-07 10:20:48 | INFO     | no-corre | auth.session         | Session started for user 'gs_xtreme' with role 'Employee'
+2025-11-07 10:20:48 | INFO     | no-corre | __main__             | Login successful: gs_xtreme (Employee)
+2025-11-07 10:20:48 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:20:48 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:20:48 | INFO     | no-corre | dashboard_window.window | Starting customer load...
+2025-11-07 10:20:48 | INFO     | no-corre | __main__             | Manage Database button disabled for role: Employee
+2025-11-07 10:20:48 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - gs_xtreme (Employee)
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:20:48 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 10:20:48 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 10:20:48 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:20:48 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:20:48 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:20:48 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 10:20:48 | INFO     | no-corre | dashboard_window.window | Customer data received: 1445 customers
+2025-11-07 10:20:48 | INFO     | no-corre | dashboard_window.window | Customer dropdown populated successfully
+2025-11-07 10:20:52 | INFO     | no-corre | src.database.pdf_generator | Generated customer report: C:\Users\SPAC-O-3\Kode_opgaver\Python\ETL\data\print\customer_report_897_Bettyann_Acosta_20251107_102052.pdf
+2025-11-07 10:22:50 | INFO     | no-corre | __main__             | Database connection established
+2025-11-07 10:23:00 | INFO     | no-corre | login_window.window  | Login requested for username: admin
+2025-11-07 10:23:00 | INFO     | no-corre | login_window.worker  | Authenticating user 'admin'
+2025-11-07 10:23:00 | INFO     | no-corre | auth.user_authenticator | User 'admin' authenticated successfully
+2025-11-07 10:23:00 | INFO     | no-corre | login_window.window  | Login successful for user: admin
+2025-11-07 10:23:21 | INFO     | no-corre | two_factor_verify_dialog | 2FA verification successful for user: admin
+2025-11-07 10:23:21 | INFO     | no-corre | auth.session         | Session started for user 'admin' with role 'Administrator'
+2025-11-07 10:23:21 | INFO     | no-corre | __main__             | Login successful: admin (Administrator)
+2025-11-07 10:23:21 | INFO     | no-corre | __main__             | Creating new main window...
+2025-11-07 10:23:21 | INFO     | no-corre | tabbed_window        | Initialized tabbed main window
+2025-11-07 10:23:21 | INFO     | no-corre | dashboard_window.window | Starting customer load...
+2025-11-07 10:23:21 | INFO     | no-corre | tabbed_window        | Added tab: Dashboard - admin (Administrator)
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:23:21 | INFO     | no-corre | mysql.connector      | package: mysql.connector.plugins
+2025-11-07 10:23:21 | INFO     | no-corre | mysql.connector      | plugin_name: caching_sha2_password
+2025-11-07 10:23:21 | INFO     | no-corre | mysql.connector      | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Building SSL context
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Switching to SSL
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | SSL has been enabled
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Starting authorization phase
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | The provided initial strategy is caching_sha2_password
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | Exchanging further packets
+2025-11-07 10:23:21 | DEBUG    | no-corre | mysql.connector      | caching_sha2_password completed succesfully
+2025-11-07 10:23:21 | INFO     | no-corre | src.database.connection_manager | Native pool initialized: 5 connections
+2025-11-07 10:23:21 | INFO     | no-corre | __main__             | Main window displayed with dashboard
+2025-11-07 10:23:21 | INFO     | no-corre | dashboard_window.window | Customer data received: 1445 customers
+2025-11-07 10:23:21 | INFO     | no-corre | dashboard_window.window | Customer dropdown populated successfully
+2025-11-07 10:23:32 | INFO     | no-corre | tabbed_window        | Added tab: User Management
+2025-11-07 10:23:32 | INFO     | no-corre | __main__             | Opened User Management tab
+2025-11-07 10:23:40 | INFO     | no-corre | tabbed_window        | Detached tab 'User Management' to standalone window
+2025-11-07 10:23:42 | INFO     | no-corre | tabbed_window        | Added tab: User Management
+2025-11-07 10:23:42 | INFO     | no-corre | tabbed_window        | Reattached window 'User Management' as tab
+2025-11-07 10:23:50 | INFO     | no-corre | auth.session         | Session ended for user 'admin'
+2025-11-07 10:23:50 | INFO     | no-corre | dashboard_window.window | User confirmed logout
+2025-11-07 10:23:50 | INFO     | no-corre | __main__             | Logout - returning to login
+2025-11-07 10:23:51 | INFO     | no-corre | __main__             | Logout completed

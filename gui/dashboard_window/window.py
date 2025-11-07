@@ -313,6 +313,7 @@ class DashboardMainWindow(QMainWindow):
     
     def _load_customers(self):
         """Load customers into dropdown"""
+        logger.info("Starting customer load...")
         worker = DashboardWorker("fetch_customers")
         worker.customers_loaded.connect(self._on_customers_loaded)
         worker.error.connect(lambda msg: logger.error(f"Customer fetch error: {msg}"))
@@ -321,6 +322,7 @@ class DashboardMainWindow(QMainWindow):
     
     def _on_customers_loaded(self, customers: list):
         """Handle customers data loaded"""
+        logger.info(f"Customer data received: {len(customers)} customers")
         self.customer_combo.clear()
         self.customer_combo.addItem("-- Select a customer --", None)
         for customer in customers:
@@ -328,6 +330,7 @@ class DashboardMainWindow(QMainWindow):
             name = f"{customer['first_name']} {customer['last_name']}"
             display_text = f"{name} (ID: {customer_id})"
             self.customer_combo.addItem(display_text, customer_id)
+        logger.info("Customer dropdown populated successfully")
     
     def _load_employees(self):
         """Load employees into table"""
