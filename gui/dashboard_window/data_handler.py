@@ -39,20 +39,22 @@ class DashboardDataHandler:
         if MODULES_AVAILABLE:
             self.window.statusBar().showMessage("Loading database tables...")
             self._start_operation("fetch_tables")
-            
+
             # Load customers for dropdown
             self.load_customers()
-            
-            # Load employees for Manager/Admin
+
+            # Ensure session and pool are ready before loading employees
+            from PySide6.QtCore import QTimer
             session = SessionManager()
             user_role = session.get_role()
-            if user_role in ["Manager", "Administrator"]:
-                self.load_employees()
-            
+            def delayed_employee_load():
+                logger.info("Attempting to load employees after session/pool ready.")
+                if user_role in ["Manager", "Administrator"]:
+                    self.load_employees()
+            QTimer.singleShot(300, delayed_employee_load)
+
             # Delay sales data fetch slightly to ensure UI is ready
-            # This prevents race condition when multiple workers compete
-            from PySide6.QtCore import QTimer
-            QTimer.singleShot(150, self.fetch_sales_data)
+            QTimer.singleShot(500, self.fetch_sales_data)
         else:
             self.window.tables_list.addItem("⚠️ Database modules not available")
             self.window.statusBar().showMessage("Database modules not available")
@@ -85,13 +87,25 @@ class DashboardDataHandler:
             display_text = f"{name} (ID: {customer_id})"
             self.window.customer_combo.addItem(display_text, customer_id)
     
-    def load_employees(self):
-        """Load employees into table"""
+    def load_employees(self, retry_count=0):
+        """Load employees into table, with retry on blank/error."""
         worker = DashboardWorker("fetch_employees")
-        worker.employees_loaded.connect(self.on_employees_loaded)
-        worker.error.connect(lambda msg: logger.error(f"Employee fetch error: {msg}"))
+        def handle_employees_loaded(employees):
+            if (not employees or len(employees) == 0) and retry_count < 2:
+                logger.warning(f"Employee fetch returned blank, retrying ({retry_count+1})...")
+                self.load_employees(retry_count=retry_count+1)
+            else:
+                self.on_employees_loaded(employees)
+        worker.employees_loaded.connect(handle_employees_loaded)
+        worker.error.connect(lambda msg: self._handle_employee_error(msg, retry_count))
         worker.finished.connect(worker.deleteLater)
         worker.start()
+
+    def _handle_employee_error(self, msg, retry_count):
+        logger.error(f"Employee fetch error: {msg}")
+        if retry_count < 2:
+            logger.info(f"Retrying employee fetch after error ({retry_count+1})...")
+            self.load_employees(retry_count=retry_count+1)
     
     def on_employees_loaded(self, employees: list):
         """
@@ -102,37 +116,33 @@ class DashboardDataHandler:
         """
         # Check if employee_table widget exists (only created for Manager/Admin)
         if not hasattr(self.window, 'employee_table'):
+            logger.error("employee_table widget does not exist for current user role!")
             return
-        
-        self.window.employee_table.setRowCount(len(employees))
-        
-        for row, emp in enumerate(employees):
-            name = f"{emp.get('name', '')} {emp.get('last_name', '')}"
-            self.window.employee_table.setItem(row, 0, QTableWidgetItem(name))
-            self.window.employee_table.setItem(row, 1, QTableWidgetItem(emp.get('email', 'N/A')))
-    
-    def generate_customer_pdf(self):
-        """Generate PDF report for selected customer"""
-        customer_id = self.window.customer_combo.currentData()
-        if not customer_id:
-            QMessageBox.warning(
-                self.window, 
-                "No Customer Selected", 
-                "Please select a customer from the dropdown."
-            )
-            return
-        
-        # Start worker to generate PDF
-        self.window.statusBar().showMessage(f"Generating PDF report for customer {customer_id}...")
-        worker = DashboardWorker("generate_customer_pdf", customer_id)
-        worker.pdf_generated.connect(self.on_pdf_generated)
-        worker.error.connect(lambda msg: QMessageBox.critical(
-            self.window, 
-            "PDF Generation Failed", 
-            msg
-        ))
-        worker.finished.connect(worker.deleteLater)
-        worker.start()
+
+        logger.debug(f"on_employees_loaded called. Employees: {employees}")
+        logger.debug(f"employee_table exists. Current row count: {self.window.employee_table.rowCount()}")
+
+        try:
+            self.window.employee_table.setRowCount(len(employees))
+
+            if not employees:
+                self.window.employee_table.setRowCount(0)
+                self.window.employee_table.clearContents()
+                self.window.employee_table.setHorizontalHeaderLabels(['Name', 'Email'])
+                self.window.employee_table.setRowCount(1)
+                self.window.employee_table.setItem(0, 0, QTableWidgetItem("No employees found or connection error"))
+                self.window.employee_table.setItem(0, 1, QTableWidgetItem(""))
+                logger.warning("No employees found or connection error. Table populated with warning message.")
+                return
+
+            for row, emp in enumerate(employees):
+                name = f"{emp.get('name', '')} {emp.get('last_name', '')}"
+                self.window.employee_table.setItem(row, 0, QTableWidgetItem(name))
+                self.window.employee_table.setItem(row, 1, QTableWidgetItem(emp.get('email', 'N/A')))
+            logger.debug(f"Employee table populated with {len(employees)} employees.")
+        except Exception as e:
+            logger.error(f"Error populating employee_table: {e}")
+        # PDF generation should only be triggered by explicit user action, not on login/employee load.
     
     def on_pdf_generated(self, filepath: str):
         """
@@ -257,6 +267,11 @@ class DashboardDataHandler:
             self.current_worker = None
     
     def cleanup_on_close(self):
+            import logging as _logging
+            logger = _logging.getLogger(__name__)
+            if hasattr(self.window, 'employee_table'):
+                logger.debug(f"employee_table widget exists, current row count: {self.window.employee_table.rowCount()}")
+    def cleanup_on_close(self):
         """Handle cleanup when window is closing"""
         if self.current_worker and self.current_worker.isRunning():
             # Disconnect signals to prevent issues during shutdown
@@ -266,9 +281,8 @@ class DashboardDataHandler:
                 self.current_worker.error.disconnect()
                 if hasattr(self.current_worker, 'tables_loaded'):
                     self.current_worker.tables_loaded.disconnect()
-            except:
+            except Exception:
                 pass
-            
             # Cancel and stop the thread
             self.current_worker.cancel()
             self.current_worker.quit()
@@ -276,3 +290,27 @@ class DashboardDataHandler:
                 # Force terminate if it doesn't stop gracefully
                 self.current_worker.terminate()
                 self.current_worker.wait(500)
+    
+    def generate_customer_pdf(self):
+        """Generate PDF report for the selected customer."""
+        if not hasattr(self.window, 'customer_combo'):
+            logger.error("Customer combo widget not found!")
+            return
+        customer_id = self.window.customer_combo.currentData()
+        if not customer_id:
+            QMessageBox.warning(
+                self.window,
+                "No Customer Selected",
+                "Please select a customer from the dropdown."
+            )
+            return
+        self.window.statusBar().showMessage(f"Generating PDF report for customer {customer_id}...")
+        worker = DashboardWorker("generate_customer_pdf", customer_id)
+        worker.pdf_generated.connect(self.on_pdf_generated)
+        worker.error.connect(lambda msg: QMessageBox.critical(
+            self.window,
+            "PDF Generation Failed",
+            msg
+        ))
+        worker.finished.connect(worker.deleteLater)
+        worker.start()

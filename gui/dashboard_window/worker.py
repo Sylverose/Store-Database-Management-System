@@ -157,26 +157,37 @@ class DashboardWorker(BaseWorker):
             
             self.progress.emit("Loading employees...")
             db_manager = DatabaseManager()
+            # Log connection stats early for diagnostics
+            try:
+                stats = db_manager.get_connection_stats()
+                import logging as _logging
+                _logging.getLogger(__name__).debug(f"Employee fetch connection stats: {stats}")
+            except Exception:
+                pass
             
             with db_manager.get_connection() as conn:
+                import logging as _logging
+                logger = _logging.getLogger(__name__)
+                if conn is None:
+                    logger.error("No database connection available for employee fetch")
+                    raise RuntimeError("No database connection available for employee fetch")
                 # Try mysql.connector style first, then PyMySQL style
                 try:
                     cursor = conn.cursor(dictionary=True)
                 except TypeError:
-                    # If dictionary=True fails, try PyMySQL style
                     import pymysql.cursors
                     cursor = conn.cursor(pymysql.cursors.DictCursor)
-                
+                logger.debug("Running employee fetch SQL...")
                 cursor.execute('''
-                    SELECT u.username, s.name, s.last_name, s.email
+                    SELECT u.username, s.name, s.last_name, s.email, u.active, u.role
                     FROM users u
                     LEFT JOIN staffs s ON u.staff_id = s.staff_id
-                    WHERE u.role = 'Employee' AND u.active = TRUE
+                    WHERE u.role = 'Employee' AND u.active = 1
                     ORDER BY s.last_name, s.name
                 ''')
                 employees = cursor.fetchall()
+                logger.debug(f"Employee fetch returned {len(employees)} rows: {employees}")
                 cursor.close()
-            
             self.employees_loaded.emit(employees)
             self.finished.emit(f"Loaded {len(employees)} employee users")
                 

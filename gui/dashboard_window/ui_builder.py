@@ -45,24 +45,24 @@ class DashboardUIBuilder:
         manage_group = QGroupBox("Database Management")
         manage_layout = QHBoxLayout(manage_group)
         
-        # Manage Database button
-        self.window.manage_db_btn = QPushButton("Manage Database")
-        self.window.manage_db_btn.setObjectName("manage_db_btn")
-        self.window.manage_db_btn.clicked.connect(self.window.open_admin_window)
-        manage_layout.addWidget(self.window.manage_db_btn)
-        
-        # Manage Users button (only for Administrators)
+        # Check user role once for conditional UI
+        session = SessionManager()
+        user_role = session.get_role()
+
+        # Manage Database button (omit entirely for Employee role)
+        if user_role != "Employee":
+            self.window.manage_db_btn = QPushButton("Manage Database")
+            self.window.manage_db_btn.setObjectName("manage_db_btn")
+            self.window.manage_db_btn.clicked.connect(self.window.open_admin_window)
+            manage_layout.addWidget(self.window.manage_db_btn)
+
+        # Manage Users button (shown only for Administrators)
         self.window.manage_users_btn = QPushButton("Manage Users")
         self.window.manage_users_btn.setObjectName("manage_users_btn")
         self.window.manage_users_btn.clicked.connect(self.window.open_user_management)
+        # Add and then hide if not admin to keep minimal change footprint
         manage_layout.addWidget(self.window.manage_users_btn)
-        
-        # Check if user is Administrator
-        session = SessionManager()
-        user_role = session.get_role()
-        
         if user_role != "Administrator":
-            # Hide Manage Users button for non-Administrators
             self.window.manage_users_btn.hide()
         
         # Add spacer to push customer report to the right

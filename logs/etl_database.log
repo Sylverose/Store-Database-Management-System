@@ -748,3 +748,64 @@
 2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: orders
 2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | Created/verified table: order_items
 2025-11-07 12:21:15 | INFO     | no-corre | etl.database         | All 9 tables created successfully
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 13:13:57 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 13:55:22 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 13:55:23 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-07 16:38:51 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-07 16:38:52 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: brands
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: categories
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: stores
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: staffs
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: customers
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: products
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: stocks
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: orders
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | Created/verified table: order_items
+2025-11-07 16:38:57 | INFO     | no-corre | etl.database         | All 9 tables created successfully
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading brands.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 9 rows from brands.csv
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading categories.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 7 rows from categories.csv
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading stores.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 3 rows from stores.csv
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading staffs.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 10 rows from staffs.csv
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading products.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 321 rows from products.csv
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Reading stocks.csv with standard pandas
+2025-11-10 10:23:27 | DEBUG    | no-corre | etl.database         | Read 939 rows from stocks.csv
+2025-11-10 10:23:28 | INFO     | no-corre | etl.database         | API data export functionality - placeholder implementation
