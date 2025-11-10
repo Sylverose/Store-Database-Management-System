@@ -1,3 +1,5 @@
+    # ...existing code...
+
 """
 Enhanced Database Manager with batch processing and connection pooling.
 Provides comprehensive ETL operations with high-performance batch operations.

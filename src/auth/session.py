@@ -36,6 +36,15 @@ class SessionManager:
             self._current_user = user_data.copy()
             self._login_time = datetime.now()
             logger.info(f"Session started for user '{user_data.get('username')}' with role '{user_data.get('role')}'")
+            # Explicitly reinitialize connection pool on login
+            try:
+                from src.database.connection_manager import DatabaseConnection
+                DatabaseConnection.close_pool()
+                logger.info("Database connection pool forcibly reset on login.")
+                DatabaseConnection.reinitialize_pool()
+                logger.info("Database connection pool reinitialized on login.")
+            except Exception as e:
+                logger.warning(f"Failed to reset/reinitialize connection pool on login: {e}")
             return True
         except Exception as e:
             logger.error(f"Error starting session: {e}")
@@ -48,6 +57,15 @@ class SessionManager:
             logger.info(f"Session ended for user '{username}'")
         self._current_user = None
         self._login_time = None
+        # Force database connection pool reset and reinit on logout
+        try:
+            from src.database.connection_manager import DatabaseConnection
+            DatabaseConnection.close_pool()
+            logger.info("Database connection pool forcibly reset on logout.")
+            DatabaseConnection.reinitialize_pool()
+            logger.info("Database connection pool reinitialized on logout.")
+        except Exception as e:
+            logger.warning(f"Failed to reset/reinitialize connection pool on logout: {e}")
     
     def is_logged_in(self) -> bool:
         """Check if a user is currently logged in."""

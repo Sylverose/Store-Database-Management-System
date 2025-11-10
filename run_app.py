@@ -152,10 +152,11 @@ class Application:
         username = self.session_manager.get_username()
         
         if not PermissionManager.can_manage_database(user_role):
-            # Hide/disable Manage Database button for non-administrators
-            self.dashboard_widget.manage_db_btn.setEnabled(False)
-            self.dashboard_widget.manage_db_btn.setToolTip("Administrator access required")
-            logger.info(f"Manage Database button disabled for role: {user_role}")
+            # Hide/disable Manage Database button for non-administrators (if present)
+            if hasattr(self.dashboard_widget, 'manage_db_btn') and self.dashboard_widget.manage_db_btn is not None:
+                self.dashboard_widget.manage_db_btn.setEnabled(False)
+                self.dashboard_widget.manage_db_btn.setToolTip("Administrator access required")
+                logger.info(f"Manage Database button disabled for role: {user_role}")
         
         # Add dashboard as tab (non-closable main tab)
         tab_title = f"Dashboard - {username} ({user_role})"
